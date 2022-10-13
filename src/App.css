@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body{
+    height: 100vh;
+    background-color: #898989;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#noteEdit{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
 }
-
-.App-link {
-  color: #61dafb;
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.5vh;
+    width: 70vw;
+    margin-left: 15%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    padding:20px;
+}
+button{
+    font-weight: bold;
+    padding: 7px;
+    padding-top: 0px;
+    text-align: center;
+    width: 95px;
+    margin-top: 0;
+    margin-right: 5px;
+    font-size: 12px;
+    background-color: #333333;
+    border-color: transparent;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    color: yellow;
+}
+p{
+    color: white;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+p:hover{
+    cursor: pointer;
+}
+i{
+    font-style: normal;
+}
+h2{
+    color: white;
+    text-decoration: underline;
+}
+#todoList{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    margin-right: 0;
+    border: solid white;
+    border-width: 1 1px;
+    padding: 15px;
+    background-color: #333333;
+}
+#todoList h2{
+    margin-left: 1vw;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    margin-right: 25%;
+}
+form button{
+    height: 25px;
+    margin-top: 15px;
+}
+input{
+    margin: 15px;
+    height: 20px;
+    width: 50vh;
+    color: white;
+    background-color: #333333;
+    border-color: #333333;
+}
+::placeHolder{
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+#clrbtn{
+    display: flex;
+    justify-content: flex-end;
+}
+#removeButton{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 10px;
+}
+#completeButton{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-size: 10px;
+}
+#doneList{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    border: solid white;
+    border-width: 1 1px;
+    padding: 15px;
+    background-color: #333333;
+}
+#doneList h2{
+    margin-bottom: 15px;
+}
+#doneClearList{
+    margin-left: 12px;
+}
+#addbtn{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 25px;
+}
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 22vh;
+    width: 70vw;
+    margin-left: 15%;
+    font-size: 12px;
+}
+#ft1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+footer p:hover{
+    cursor: default;
+}
+#footerText2 {
+    margin-right: 15px;
+}
+#footerTitle{
+    text-decoration: underline;
 }
